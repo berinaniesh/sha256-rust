@@ -1,10 +1,12 @@
 // Taken from wikipedia (https://en.wikipedia.org/wiki/SHA-2)
 
+// These are the first 32 bits of the fractional part of the square root of the first 8 prime numbers. 
 pub const H: [u32; 8] = 
     [
         0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a, 0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19,
     ];
 
+// These are the first 32 bits of the fractional part of the cube root of the first 64 prime numbers. 
 pub const K: [u32; 64] = 
     [
         0x428a2f98, 0x71374491, 0xb5c0fbcf, 0xe9b5dba5, 0x3956c25b, 0x59f111f1, 0x923f82a4, 0xab1c5ed5,
